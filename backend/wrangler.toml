@@ -1,0 +1,15 @@
+name = "vuce-backend"
+main = "src/index.tsx"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Environment variables (use wrangler secret put to set sensitive values)
+# RESEND_API_KEY = "your-api-key-here"  # Use: wrangler secret put RESEND_API_KEY
+# CONTACT_EMAIL = "your-email@vuce.in"  # Use: wrangler secret put CONTACT_EMAIL
+
+[env.production]
+name = "vuce-backend"
+routes = [
+  { pattern = "api.vuce.in/contact", zone_name = "vuce.in" }
+]
+
