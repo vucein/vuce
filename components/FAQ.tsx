@@ -11,7 +11,7 @@ const faqs = [
     },
     {
         question: "What is your pricing structure?",
-        answer: "We offer both project-based pricing and monthly retainers. Project starts typically range from $15k-$50k depending on complexity. We believe in transparent pricing with no hidden fees.",
+        answer: "Every project is unique. We provide custom quotes based on your specific requirements, timeline, and technical complexity. Contact us for a strategic consultation and a detailed estimate.",
     },
     {
         question: "Do you provide post-launch support?",
