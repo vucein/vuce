@@ -9,6 +9,7 @@ import PageTransition from "@/components/PageTransition";
 import MobileOptimizationNotice from "@/components/MobileOptimizationNotice";
 import StructuredData from "@/components/StructuredData";
 import ConsoleFilter from "@/components/ConsoleFilter";
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://vuce.in'),
@@ -72,6 +73,20 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <StructuredData />
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-TWPNXJKRRP"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-TWPNXJKRRP');
+          `}
+        </Script>
       </head>
       <body className={`${GeistSans.variable} ${GeistMono.variable} bg-black text-white antialiased selection:bg-white selection:text-black relative`}>
         <ConsoleFilter />
