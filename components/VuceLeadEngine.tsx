@@ -570,7 +570,7 @@ export default function VuceLeadEngine({ className = "" }: { className?: string 
         // Submit to API
         try {
             setErrors({});
-            const response = await fetch('/api/contact', {
+            const response = await fetch(config.api.contact, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

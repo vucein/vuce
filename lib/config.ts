@@ -7,6 +7,7 @@ const config = {
   api: {
     ipapi: process.env.NEXT_PUBLIC_IPAPI_URL || 'https://ipapi.co/json/',
     currency: process.env.NEXT_PUBLIC_CURRENCY_API_URL || 'https://open.er-api.com/v6/latest/USD',
+    contact: process.env.NEXT_PUBLIC_API_URL || 'https://api.vuce.in/contact',
   },
   site: {
     url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
