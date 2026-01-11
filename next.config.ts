@@ -27,7 +27,7 @@ const securityHeaders = [
   },
   {
     key: 'Content-Security-Policy',
-    value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://ipapi.co https://open.er-api.com https://api.vuce.in https://vuce-backend.vucemedia.workers.dev;"
+    value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://ipapi.co https://open.er-api.com https://api.vuce.in https://vuce-backend.vucemedia.workers.dev https://*.vuce.in;"
   },
 ];
 

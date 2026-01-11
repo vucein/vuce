@@ -592,6 +592,7 @@ export default function VuceLeadEngine({ className = "" }: { className?: string 
             }
         } catch (error) {
             // Show submission error
+            console.error('Submission error:', error);
             const errorMessage = error instanceof Error ? error.message : 'Failed to send message. Please try again.';
             setErrors({
                 ...errors,
